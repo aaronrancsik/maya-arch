@@ -6,24 +6,33 @@ Based on thanks to [AUR maya package & forum](https://aur.archlinux.org/packages
 Pay Maya if you like it or learn Blender :)
 ## Install
 ### -1 Firs of all you need to recompile `libtiff`.
-See: [Libtiff with version script](https://example.com)
-### 0. Download Maya 22.1 BIG archive.
+See: [libtiff-for-maya-arch](https://github.com/aaronrancsik/libtiff-for-maya-arch)
+### 0. Download Maya BIG archive.
 [Official Link](https://trial2.autodesk.com/NetSWDLD/2022/MAYA/8A2BC89C-9B8B-33FC-949F-C7CAE28366A4/ESD/Autodesk_Maya_2022_1_ML_Linux_64bit.tgz)
 
 `cd /tmp && wget -O Maya20221_BIG.tgz shorturl.at/aduIW`
-### 1. Extract with GUI or in Terminal
+### 1. Extract to BIG folder with GUI or in Terminal
 
-`mkdir /tmp/maya221_BIG`
+`mkdir /tmp/Maya20221_BIG`
 
-`cd /tmp/maya221_BIG`
+`cd /tmp/Maya20221_BIG`
 
 `tar zxvf ../Maya20221_BIG.tgz`
 ### 2. Get this package source.
-Clone it somewhere else if you want keep it.
+#### Select a dir
+`cd /tmp/`
 
-`cd /tmp/ && git clone github.com/aaronrancsik/maya-arch`
-### 3. Copy maya's installer .rpm from the BIG archive. 
-`cp /tmp/maya221_BIG/Packages/Maya2022_64-2022.1-579.x86_64.rpm /tmp/maya-arch/`
+Or somewhere else if you want keep it.
+#### Choose one:
+
+#### A. Git HTTPS
+
+`git clone https://github.com/aaronrancsik/maya-arch.git`
+
+#### B. Git SSH
+`git clone git@github.com:aaronrancsik/maya-arch.git`
+### 3. Get maya's installer .rpm from the BIG folder. 
+`cp /tmp/maya20221_BIG/Packages/Maya2022_64-2022.1-579.x86_64.rpm /tmp/maya-arch/`
 ### 4. Install aur dependencies
 For example with `paru`.
 
